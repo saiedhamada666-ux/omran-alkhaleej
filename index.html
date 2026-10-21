@@ -583,7 +583,7 @@ nav.tabs .in{max-width:560px;margin-inline:auto;display:grid;grid-template-colum
     <div id="homeShop"></div>
 
     <div class="cta rv">
-      <img class="px" src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=1600&q=70&auto=format&fit=crop" alt="" loading="lazy" onerror="this.onerror=null;this.src='p/plaster-13.jpg';this.classList.add('fb')">
+      <img class="px" src="https://images.unsplash.com/photo-1772442198624-4fc4d7281e89?w=1600&q=70&auto=format&fit=crop" alt="" loading="lazy" onerror="this.onerror=null;this.src='p/plaster-13.jpg';this.classList.add('fb')">
       <div class="cta-in"><h2 data-t="ctaT"></h2><p data-t="ctaS"></p><a class="btn btn-wa" id="ctaWa" target="_blank" rel="noopener"><span class="ico-wa"></span><span data-t="ctaB"></span></a></div>
     </div>
 
@@ -603,7 +603,7 @@ nav.tabs .in{max-width:560px;margin-inline:auto;display:grid;grid-template-colum
 
     <div class="sec-h" id="about-h"><h2 data-t="about"></h2></div>
     <div class="about2 rv">
-      <figure class="about-ph"><img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=1000&q=70&auto=format&fit=crop" alt="" loading="lazy" onerror="this.onerror=null;this.src='p/iso-02.jpg'"><figcaption><b>+965 6687 1081 · +965 6091 3767</b><span data-t="addr"></span></figcaption></figure>
+      <figure class="about-ph"><img src="https://images.unsplash.com/photo-1782948603191-065fb15e2e8e?w=1000&q=70&auto=format&fit=crop" alt="" loading="lazy" onerror="this.onerror=null;this.src='p/iso-02.jpg'"><figcaption><b>+965 6687 1081 · +965 6091 3767</b><span data-t="addr"></span></figcaption></figure>
       <div class="txt"><p data-t="about1"></p><p data-t="about2"></p><p data-t="about3"></p></div>
     </div>
     <div class="about rv" style="margin-top:12px">
@@ -790,9 +790,9 @@ function cardHTML(p,i){
     </div></article>`;
 }
 const UNS=id=>w=>`https://images.unsplash.com/photo-${id}?w=${w}&q=70&auto=format&fit=crop`;
-const HERO=['1508450859948-4e04fabaa4ea','1777919393730-463e2c0b7f4c','1717281234297-3def5ae3eee1','1761986757577-140af8859587','1674485169641-bcb2bf6f1df9','1523413307857-ef24c53571ae','1429497419816-9ca5cfb4571a'];
-const CATIMG={iso:'1674485169641-bcb2bf6f1df9',plaster:'1761986757577-140af8859587',paint:'1717281234297-3def5ae3eee1',tile:'1523413307857-ef24c53571ae',frame:'1777919393730-463e2c0b7f4c'};
-const BNRIMG={iso:'1674485169641-bcb2bf6f1df9',plaster:'1761986757577-140af8859587',paint:'1717281234297-3def5ae3eee1',tile:'1523413363574-c30aa1c2a516',frame:'1541888946425-d81bb19240f5'};
+const HERO=['1485083269755-a7b559a4fe5e','1785257532053-34686f5c3e10','1768926968986-a88590ce5025','1635424709845-3a85ad5e1f5e','1693985120993-e9b203ce7631','1763771420303-0f11ccf613d1','1535732759880-bbd5c7265e3f'];
+const CATIMG={iso:'1563174499-c1a4e1aa55ee',plaster:'1768839725085-829e6ac7ac26',paint:'1562259949-e8e7689d7828',tile:'1523350165414-082d792c4bcc',frame:'1763771420303-0f11ccf613d1'};
+const BNRIMG={iso:'1635424709845-3a85ad5e1f5e',plaster:'1581710515207-e12b6e176779',paint:'1693985120993-e9b203ce7631',tile:'1600328604921-300918f36018',frame:'1761213230327-d89a8cc9cc63'};
 const SLIDES=[2,67,62,0,72,65,63];
 function slideFail(im){im.remove();const left=$('#slides').children.length;if(!left){$('#slides').innerHTML=SLIDES.map(byId).filter(Boolean).map((p,i)=>`<img src="${p.img}" alt="" class="${i===0?'on':''}">`).join('');slideI=0}renderDots();showSlide(Math.min(slideI,$('#slides').children.length-1))}
 function renderDots(){$('#dots').innerHTML=[...$('#slides').children].map((p,i)=>`<button type="button" data-slide="${i}" class="${i===slideI?'on':''}" aria-label="${i+1}"></button>`).join('')}
